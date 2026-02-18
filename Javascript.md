@@ -232,5 +232,3 @@ graph LR
 3. **What is an event-driven language?**
 4. **What is a JavaScript engine?**
 5. **Where does JavaScript run?**
-
-**Next Concept-->Execution Context**
