@@ -77,7 +77,7 @@ Task 3
 ```
 *Runs sequentially, one by one.*
 
-> **Real-Life Example:**  
+> **Real-Life Indian Example:**  
 > Imagine a **Railway Ticket Counter**.  
 > Only one person can buy a ticket at a time. The next person must wait.  
 > JavaScript works the same way.
