@@ -37,7 +37,7 @@ There are **3 types** of Execution Context:
 
 >  **For placements, focus on the first two.**
 
-### 1️⃣ Global Execution Context (GEC)
+### 1.Global Execution Context (GEC)
 - This is created when the JavaScript program starts.
 - It is the **default** execution context.
 
@@ -99,7 +99,7 @@ greet() → executed
 
 ---
 
-## 💻 Example: Step-by-Step Execution
+## Example: Step-by-Step Execution
 
 ```javascript
 var x = 10;
@@ -253,7 +253,7 @@ status → success
 
 ---
 
-## ❓ Interview Questions
+##  Interview Questions
 **Very commonly asked questions:**
 
 #### Q1: What is Execution Context?
@@ -285,7 +285,7 @@ Because it explains:
 
 *Without understanding Execution Context, you cannot understand JavaScript deeply.*
 
-> **🎓Placement Tip (Very Important)**
+> **Placement Tip (Very Important)**
 >
 > If an interviewer asks: **"How JavaScript executes code internally?"**
 >
