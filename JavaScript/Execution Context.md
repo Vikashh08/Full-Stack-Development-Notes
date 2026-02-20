@@ -292,4 +292,4 @@ Because it explains:
 > **Answer using Execution Context and Call Stack.** This shows strong understanding.
 
 ---
-**Next Concept:** Foundation of Execution Context
+**Next Concept:** Foundation of Execution Context(Call Stack)
