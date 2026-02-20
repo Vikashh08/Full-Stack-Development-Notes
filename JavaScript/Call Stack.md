@@ -1,4 +1,4 @@
-#  JavaScript Call Stack: A Deep Dive
+# Call Stack: 
 
 The **Call Stack** is a fundamental mechanism utilized by the JavaScript engine to keep track of its place in a script that calls multiple functions. Since JavaScript is a **single-threaded** programming language, it has exactly one Call Stack. This means it can only process one command or function at a time.
 
