@@ -1,15 +1,15 @@
-# 🚀 Hoisting in JavaScript: The Ultimate Interview Guide
+#  Hoisting in JavaScript: The Ultimate Interview Guide
 
 **Hoisting** is one of the most frequently asked topics in JavaScript interviews. It can seem confusing at first, but once you understand how JavaScript executes code under the hood, it becomes incredibly simple.
 
-## 👶 Simple Explanation (The "What")
+## Simple Explanation (The "What")
 Imagine you are packing for a trip. Before you put anything inside your suitcase, you first make a **list** of all the items you need to pack (shirts, shoes, toothbrush). 
 
 JavaScript does exactly this! Before it runs a single line of your code, it scans the file and makes a "list" of all your variables and functions. It conceptually moves these declarations to the **top** of their scope so they are ready to use. This behavior is called **Hoisting**.
 
 ---
 
-## 🛠️ The Core Concept (The "Why")
+## The Core Concept (The "Why")
 
 In interviews, saying *"Declarations are moved to the top"* is a basic answer. The **advanced, placement-level answer** involves explaining the **Execution Context**.
 
@@ -28,7 +28,7 @@ JavaScript goes through the code again line by line, assigns the actual values t
 
 ## 1. Variable Hoisting Explained
 
-### 🟢 `var` Hoisting (Initialized with `undefined`)
+### `var` Hoisting (Initialized with `undefined`)
 Because `var` is initialized with `undefined` during the memory phase, accessing it before its declaration won't throw an error; it just prints `undefined`.
 
 ```javascript
@@ -44,7 +44,7 @@ console.log(studentName);
 studentName = "Vikash"; // actual assignment during execution
 ```
 
-### 🔴 `let` and `const` (The Temporal Dead Zone)
+### `let` and `const` (The Temporal Dead Zone)
 Are `let` and `const` hoisted? **Yes, they are!** 
 But unlike `var`, they are *not* given the `undefined` placeholder. If you try to use them before they are declared, JavaScript throws a `ReferenceError`.
 
@@ -62,7 +62,7 @@ let age = 25;     // TDZ ends here
 
 ## 2. Function Hoisting Explained
 
-### 🟢 Function Declarations (Complete Hoisting)
+###  Function Declarations (Complete Hoisting)
 Function declarations are fully hoisted. This means you can call the function before you even write it in your code!
 
 ```javascript
@@ -73,7 +73,7 @@ function sayHello() {
 }
 ```
 
-### 🔴 Function Expressions & Arrow Functions (Behave like Variables)
+###  Function Expressions & Arrow Functions (Behave like Variables)
 If you assign a function or an arrow function to a variable (`var`, `let`, or `const`), it follows **variable hoisting rules**, not function hoisting rules.
 
 ```javascript
@@ -87,7 +87,7 @@ var greet = function() {
 
 ---
 
-## 🥊 The Clash: Function vs Variable Priority
+##  The Clash: Function vs Variable Priority
 
 What if a variable and a function have the exact same name?
 *   During the **Memory Phase**, Functions win.
@@ -108,9 +108,9 @@ console.log(magic); // Output: 100
 
 ---
 
-## 💼 Top Interview Questions on Hoisting
+##  Top Interview Questions on Hoisting
 
-### 🟢 Level 1: The Basics
+###  Level 1: The Basics
 
 **Q1: What is hoisting in JavaScript?**
 **Simple Answer:** It is JavaScript's default behavior of moving variable and function declarations to the top of their scope before code execution.
@@ -122,7 +122,7 @@ console.log(magic); // Output: 100
 **Q3: What is the Temporal Dead Zone (TDZ)?**
 **Answer:** It is the period between entering a block scope and the actual execution of a variable declaration (`let` or `const`). Accessing the variable during this zone results in a `ReferenceError`.
 
-### 🟡 Level 2: Tricky Snippets
+### Level 2: Tricky Snippets
 
 **Q4: Predict the Output**
 ```javascript
@@ -148,7 +148,7 @@ var foo = function() {
 **Answer:** `TypeError: foo is not a function`.
 **Explanation:** `foo` is declared using `var`, so it is hoisted and initialized with `undefined`. Calling `foo()` before assignment is like calling `undefined()`.
 
-### 🔴 Level 3: Advanced
+### Level 3: Advanced
 
 **Q6: Predict the Output**
 ```javascript
@@ -172,7 +172,7 @@ login();
 
 ---
 
-## 📊 Quick Summary Table (Memorize This!)
+##  Quick Summary Table (Memorize This!)
 
 | Keyword | Hoisted? | Initialized in Memory Phase | Scope | Accessible Before Declaration? |
 | :--- | :---: | :--- | :--- | :--- |
@@ -182,4 +182,4 @@ login();
 | **`function`**| ✅ Yes | Complete function code | Function/Global| ✅ Yes |
 
 ---
-**⏩ Next Concept (VERY IMPORTANT):** We study **Scope in JavaScript** (The foundation of Closures and the `this` keyword).
+**Next Concept (VERY IMPORTANT):** We study **Scope in JavaScript** (The foundation of Closures and the `this` keyword).(./Scope.md)
