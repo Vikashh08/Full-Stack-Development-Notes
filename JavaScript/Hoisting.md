@@ -1,4 +1,4 @@
-#  Hoisting in JavaScript: The Ultimate Interview Guide
+#  Hoisting in JavaScript: 
 
 **Hoisting** is one of the most frequently asked topics in JavaScript interviews. It can seem confusing at first, but once you understand how JavaScript executes code under the hood, it becomes incredibly simple.
 
@@ -15,13 +15,13 @@ In interviews, saying *"Declarations are moved to the top"* is a basic answer. T
 
 Whenever you run JavaScript, it creates an **Execution Context**. This context works in two phases:
 
-### Phase 1: Memory Creation Phase 🧠
+### Phase 1: Memory Creation Phase
 JavaScript scans the code line-by-line before executing it. It allocates memory for:
 *   **Variables (`var`)**: Stored in memory and initialized with a special placeholder: `undefined`.
 *   **Variables (`let` & `const`)**: Stored in memory but **not initialized**. They stay in a restricted state.
 *   **Functions (Declarations)**: The **entire function code** is copied and stored directly into memory.
 
-### Phase 2: Code Execution Phase ⚙️
+### Phase 2: Code Execution Phase 
 JavaScript goes through the code again line by line, assigns the actual values to variables, and executes the functions.
 
 ---
@@ -52,7 +52,7 @@ This restricted period is called the **Temporal Dead Zone (TDZ)**.
 
 ```javascript
 // TDZ for 'age' starts here
-console.log(age); // ❌ ReferenceError: Cannot access 'age' before initialization
+console.log(age); // ReferenceError: Cannot access 'age' before initialization
 let age = 25;     // TDZ ends here
 ```
 
@@ -77,7 +77,7 @@ function sayHello() {
 If you assign a function or an arrow function to a variable (`var`, `let`, or `const`), it follows **variable hoisting rules**, not function hoisting rules.
 
 ```javascript
-greet(); // ❌ TypeError: greet is not a function
+greet(); //  TypeError: greet is not a function
 
 var greet = function() {
     console.log("Hi there!");
@@ -176,10 +176,10 @@ login();
 
 | Keyword | Hoisted? | Initialized in Memory Phase | Scope | Accessible Before Declaration? |
 | :--- | :---: | :--- | :--- | :--- |
-| **`var`** | ✅ Yes | `undefined` | Function/Global | ✅ Yes (As `undefined`) |
-| **`let`** | ✅ Yes | *None (TDZ)* | Block | ❌ No (`ReferenceError`) |
-| **`const`**| ✅ Yes | *None (TDZ)* | Block | ❌ No (`ReferenceError`) |
-| **`function`**| ✅ Yes | Complete function code | Function/Global| ✅ Yes |
+| **`var`** | Yes | `undefined` | Function/Global |  Yes (As `undefined`) |
+| **`let`** |  Yes | *None (TDZ)* | Block |  No (`ReferenceError`) |
+| **`const`**|  Yes | *None (TDZ)* | Block |  No (`ReferenceError`) |
+| **`function`**|  Yes | Complete function code | Function/Global| Yes |
 
 ---
-**Next Concept (VERY IMPORTANT):** We study **Scope in JavaScript** (The foundation of Closures and the `this` keyword).(./Scope.md)
+**Next Concept (VERY IMPORTANT):** We study **Scope in JavaScript** (The foundation of Closures and the `this` keyword). [Scope](./Scope.md)
