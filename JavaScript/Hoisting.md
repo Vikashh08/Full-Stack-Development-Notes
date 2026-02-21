@@ -26,7 +26,7 @@ JavaScript goes through the code again line by line, assigns the actual values t
 
 ---
 
-## 1. Variable Hoisting Explained
+## 1. Variable Hoisting
 
 ### `var` Hoisting (Initialized with `undefined`)
 Because `var` is initialized with `undefined` during the memory phase, accessing it before its declaration won't throw an error; it just prints `undefined`.
@@ -60,7 +60,7 @@ let age = 25;     // TDZ ends here
 
 ---
 
-## 2. Function Hoisting Explained
+## 2. Function Hoisting
 
 ###  Function Declarations (Complete Hoisting)
 Function declarations are fully hoisted. This means you can call the function before you even write it in your code!
@@ -108,7 +108,7 @@ console.log(magic); // Output: 100
 
 ---
 
-##  Top Interview Questions on Hoisting
+## Interview Questions on Hoisting
 
 ###  Level 1: The Basics
 
