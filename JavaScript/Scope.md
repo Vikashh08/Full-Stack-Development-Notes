@@ -359,5 +359,5 @@ Because `inner` uses the closest available variable in the scope chain, which is
 - **Lexical scope** perfectly determines how the **scope chain** behaves.
 
 ### Next Concept
-> **Closures (MOST IMPORTANT JavaScript interview topic)**  
+> **[Closures](./Closure.md) (MOST IMPORTANT JavaScript interview topic)**  
 > *Note: Closures depend entirely on a strong understanding of Scope.*
