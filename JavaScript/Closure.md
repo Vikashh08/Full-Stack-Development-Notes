@@ -1,4 +1,4 @@
-# Closures in JavaScript 🚀
+# Closures in JavaScript 
 
 If you have ever been in a JavaScript interview, you have probably heard the word **"Closure"** thrown around like it is some magical, complex wizardry. 
 
@@ -14,7 +14,7 @@ In technical terms, a **closure** is created when a function is defined inside a
 
 But let's make it simpler.
 
-### The "Backpack" Analogy 🎒
+### The "Backpack" Analogy 
 
 Imagine you are going on a hike. Before you leave your house (the parent function), you pack some essential tools into your **backpack** (like a water bottle and a flashlight). 
 
@@ -36,7 +36,7 @@ If an outer function returns an inner function, the inner function holds a refer
 
 As a result, those outer variables are kept alive in memory.
 
-### Visualizing Closures with a Diagram 🗺️
+### Visualizing Closures with a Diagram 
 
 Here is how JavaScript keeps variables alive behind the scenes:
 
@@ -96,7 +96,7 @@ myCounter(); // Output: 2
 
 Closures aren't just an interview topic—they are incredibly useful in daily coding. Here are the three most common use cases:
 
-### A. Data Encapsulation & Private Variables 🔒
+### A. Data Encapsulation & Private Variables 
 In JavaScript, classes have private fields, but historically, closures were the main way to hide variables from the outside world. This prevents external code from accidentally breaking your state.
 
 ```javascript
@@ -129,7 +129,7 @@ console.log(myAccount.balance); // undefined (Safe! Can't access directly)
 console.log(myAccount.getBalance()); // 120
 ```
 
-### B. Function Factories (Currying) 🏭
+### B. Function Factories (Currying) 
 You can use closures to create specialized versions of functions.
 
 ```javascript
@@ -146,7 +146,7 @@ console.log(double(5)); // 10
 console.log(triple(5)); // 15
 ```
 
-### C. Maintaining State in Asynchronous Callbacks ⏱️
+### C. Maintaining State in Asynchronous Callbacks 
 Closures allow event listeners or timers to remember values they need, even when executed seconds or minutes later.
 
 ```javascript
@@ -187,7 +187,7 @@ for (var i = 1; i <= 5; i++) {
 
 ---
 
-### Solution 1: Use `let` (Modern & Simple) 💡
+### Solution 1: Use `let` (Modern & Simple) 
 
 If you change `var` to `let`, it works perfectly!
 
@@ -206,7 +206,7 @@ for (let i = 1; i <= 5; i++) {
 
 ---
 
-### Solution 2: Use an IIFE (If you can't use `let`) 🏛️
+### Solution 2: Use an IIFE (If you can't use let) 
 
 If an interviewer asks you to solve it *without* using `let`, you can use an **Immediately Invoked Function Expression (IIFE)** to force a closure:
 
@@ -227,11 +227,10 @@ By wrapping `setTimeout` inside a function and immediately invoking it with `i`,
 
 ---
 
-## 6. The Trade-offs: Memory & Clean Up 🧹
+## 6. The Trade-offs: Memory & Clean Up 
 
 While closures are incredibly powerful, they come with a warning label:
 
-> [!WARNING]
 > **Closures can lead to Memory Leaks if not managed carefully!**
 
 Because variables inside a closure cannot be garbage-collected as long as the inner function is alive, they consume RAM. If you create thousands of closures and never clean them up, your app can slow down or crash.
@@ -337,9 +336,9 @@ function once(fn) {
     };
 }
 
-const launchRocket = once(() => "Rocket Launched! 🚀");
-console.log(launchRocket()); // "Rocket Launched! 🚀"
-console.log(launchRocket()); // "Rocket Launched! 🚀" (Does not launch again)
+const launchRocket = once(() => "Rocket Launched! ");
+console.log(launchRocket()); // "Rocket Launched! "
+console.log(launchRocket()); // "Rocket Launched! " (Does not launch again)
 ```
 
 ---
@@ -358,5 +357,5 @@ console.log(launchRocket()); // "Rocket Launched! 🚀" (Does not launch again)
 
 ## Next Topic
 Now that you have mastered Closures, you are ready to understand the next pillar of JavaScript execution:
-> **Prototypes and Prototype Chain ⛓️**  
+> **Prototypes and Prototype Chain**  
 > *Check out the next guide in the series to master OOP in JavaScript!*
